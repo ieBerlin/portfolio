@@ -4,16 +4,21 @@ export default function Introduction() {
   return (
     <div className=" w-4/5 mx-auto">
       <ElementTitle>
-        Who's <span className="text-aqua">Alaa Eddine Ourmassi</span>
+        Who's{" "}
+        <span className="bold-roboto-mono-font">Alaa Eddine Ourmassi</span>
       </ElementTitle>
-      <main>
-        <div className="my-4 flex flex-row gap-6 md:gap-10 items-start justify-between mx-auto">
+      <main className="my-4 flex flex-row gap-10 items-start mx-auto">
+        <div>
           <h3 className="font-medium text-gray-200 text-sm md:text-md lg:text-lg">
-          <span className="text-center w-full block text-red-200 text-md md:text-lg lg:text-xl"> Hey there!</span>
+            <span className="roboto-mono-font text-start w-full block text-gray-400 text-md md:text-lg lg:text-xl rubik-font">
+              {" "}
+              Hey there!
+            </span>
             I'm{" "}
             <span
+              className="bold-roboto-mono-font"
               style={{
-                color: "aqua",
+                color: "#0284c7",
               }}
             >
               Alaa Eddine Ourmassi
@@ -32,13 +37,12 @@ export default function Introduction() {
             information below. I'm always open to new opportunities and eager to
             connect!
           </h3>
-          <img
-            className="cursor-pointer w-28 h-28 rounded-md drop-shadow-lg md:w-60 md:h-60 transition-transform duration-300 alaa-image"
-            src={logoImage}
-            alt="Profile"
-            
-          />
         </div>
+        <img
+          className="cursor-pointer w-28 h-28 rounded-md md:w-60 md:h-60 transition-transform duration-300 alaa-image"
+          src={logoImage}
+          alt="Profile"
+        />
       </main>
     </div>
   );

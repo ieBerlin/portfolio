@@ -7,14 +7,14 @@ import PhoneNumberSvg from "./assets/social-network/PhoneNumberSvg";
 
 export default function Footer() {
   return (
-    <section>
+    <section className="w-4/5 mx-auto">
         <hr
-        className="w-4/5 mx-auto mt-3"
-        style={{ borderTop: "0.1px solid #7dcfff" }}
+        className=" mx-auto mt-3"
+        style={{ borderTop: "0.1px solid #0284c7" }}
       />
       <div className="flex items-start gap-10 justify-center py-2 text-center sm:py-3 md:py-4 lg:py-5">
         <div className=" flex flex-col gap-4 justify-center items-start text-sm sm:text-md md:text-lg">
-          <h3 className="font-semibold text-gray-500 uppercase w-full">Social :</h3>
+          <h3 className="font-semibold text-gray-500 uppercase w-full rubik-font">Social :</h3>
           <SocialComponent
             href="https://www.linkedin.com/in/aeourmassi/"
             label="aeourmassi"
@@ -32,7 +32,7 @@ export default function Footer() {
           </SocialComponent>
         </div>
         <div className=" flex flex-col gap-4 justify-center items-start text-sm sm:text-md md:text-lg">
-          <h3 className="font-semibold text-gray-500 uppercase w-full">
+          <h3 className="font-semibold text-gray-500 uppercase w-full rubik-font">
            Where You Can Find me :
           </h3>
           <SocialComponent
@@ -43,20 +43,20 @@ export default function Footer() {
           </SocialComponent>
           <div className="flex flex-row gap-2 items-center">
             <PhoneNumberSvg />
-            <h3 className=" font-normal text-white">+213-658094987</h3>
+            <h3 className="tracking-wider text-white roboto-mono-font text-sm sm:text-base">+213-658094987</h3>
           </div>
           <div className="flex flex-row gap-2 items-center">
             <LocationSvg />
-            <h3 className=" font-normal text-white">Sidi Bel Abbes, Algeria</h3>
+            <h3 className="tracking-wider text-white roboto-mono-font text-sm sm:text-base">Sidi Bel Abbes, Algeria</h3>
           </div>
         </div>
       </div>
       <hr
         className="w-3/5 mx-auto mt-3"
-        style={{ borderTop: "0.1px solid #7dcfff" }}
+        style={{ borderTop: "0.1px solid #0284c7" }}
       />
-      <div className="w-full block py-2 text-center sm:py-3 md:py-4 lg:py-5">
-        <h1 className="text-gray-400 font-semibold capitalize text-sm sm:text-sm md:text-md lg:text-lg">
+      <div className=" block py-2 text-center sm:py-3 md:py-4 lg:py-5 ">
+        <h1 className="rubik-font text-gray-400 font-semibold capitalize text-sm sm:text-sm md:text-md lg:text-lg ">
           The only way to do great work is to love what you do.
         </h1>
       </div>
@@ -69,8 +69,8 @@ function SocialComponent({ children, label, href }) {
     <a href={href} target="blank">
       <div className="flex flex-row gap-2 items-center justify-start">
         {children}
-        <h3 className=" font-normal text-white">{label}</h3>
-      </div>
+        <h3 className="tracking-wider text-white roboto-mono-font text-sm sm:text-base">{label}</h3>
+       </div>
     </a>
   );
 }

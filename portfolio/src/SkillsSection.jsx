@@ -12,7 +12,7 @@ export default function SkillsSection() {
   return (
     <section className=" w-4/5 mx-auto mt-16">
       <ElementTitle>Skills And Technologies</ElementTitle>
-      <h2 className="font-medium text-gray-400 my-2 text-base md:text-lg lg:text-xl">
+      <h2 className="font-medium text-gray-400 my-2 text-base md:text-lg lg:text-xl rubik-font">
         Here’s my toolbelt for success:
       </h2>
 

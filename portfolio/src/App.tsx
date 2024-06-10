@@ -6,7 +6,7 @@ import Introduction from "./Introduction.jsx";
 import CurrentActivities from "./CurrentActivities.jsx";
 export default function App() {
   return (
-    <div className="bg-[#24283b]">
+    <div className="bg-[#080e1c]">
       <Header />
       <Introduction />
       <SkillsSection/>
