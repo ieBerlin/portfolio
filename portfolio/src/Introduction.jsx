@@ -1,17 +1,43 @@
+import logoImage from "./assets/1718025457471.jpg";
+import ElementTitle from "./ElementTitle.tsx"
 export default function Introduction() {
   return (
-    <div>
-      <div className="flex flex-row gap-4 items-center w-3/5 mx-auto">
-        <h2 className="font-semibold text-gray-300 text-xl whitespace-nowrap">
-        Who's Alaa Eddine Ourmassi
-        </h2>
-        <hr
-          className="w-full"
-          style={{ borderTop: "0.1px solid aqua" }}
-        />
-      </div>
+    <div className=" w-4/5 mx-auto">
+      <ElementTitle>
+        Who's <span className="text-aqua">Alaa Eddine Ourmassi</span>
+      </ElementTitle>
       <main>
-        
+        <div className="my-4 flex flex-row gap-6 md:gap-10 items-start justify-center md:justify-start mx-auto">
+          <h3 className="font-medium text-gray-200 text-sm md:text-md lg:text-lg">
+            Hey there!
+            <br /> I'm{" "}
+            <span
+              style={{
+                color: "aqua",
+              }}
+            >
+              Alaa Eddine Ourmassi
+            </span>
+            , currently pursuing my Computer Science degree at FSE of Sidi Bel
+            Abbès in Algeria.
+            <br /> My journey into the world of technology began in the summer
+            of 2023, initially focusing on mobile development before
+            transitioning into the dynamic realm of web development.
+            <br /> I'm deeply passionate about learning new technologies and
+            constantly strive to expand my skill set.
+            <br /> My goal is to bring innovative ideas to life through
+            captivating applications while enhancing existing ones.
+            <br /> If you have any exciting project ideas or are looking to
+            collaborate, don't hesitate to reach out through my contact
+            information below. I'm always open to new opportunities and eager to
+            connect!
+          </h3>
+          <img
+            className="w-28 h-28 rounded-md drop-shadow-lg md:w-60 md:h-60"
+            src={logoImage}
+            alt="Profile"
+          />
+        </div>
       </main>
     </div>
   );
