@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.container {
+    display: inline-block;
+}
+
+.logo-image {
+    position: fixed;
+    left: 3px;
+    top: 3px;
+    transition: filter 0.3s ease, opacity 0.3s ease, top 0.5s ease;
+    filter: drop-shadow( 2px 2px 0 aqua);
+}
+
+.logo-image:hover {
+    transition: all 0.3s ease;
+    filter: drop-shadow( 4px 4px 0 aqua);
+}
+
+.logo-image.moved {
+    opacity: 0;
+    top: -100px;
+}

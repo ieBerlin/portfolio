@@ -1,0 +1,33 @@
+Contact
+Projects
+Home
+Who's Alaa Eddine Ourmassi?
+Hey, I'm Alaa Eddine Ourmassi,
+ a Computer Science student at
+ FSE of Sidi Bel Abbès in Algeria.
+ My journey began in the summer of 2023
+ with mobile development, and I have since
+ transitioned into the web industry. I spend most
+ of my time learning new technologies, aiming to
+ visualize innovative apps and develop existing 
+ones further. If you have any project ideas or want 
+to collaborate, feel free to reach out through my contact 
+information below.
+
+I’ve honed my skills and built a solid foundation. Here’s my toolbelt for success:
+
+JavaScript (ES6+)
+React
+Flutter
+Nodejs
+MySql
+MongoDB
+Typescript
+git
+
+What i'm currently doing
+I'm actively mastering Next.js while refining my expertise through hands-on web development projects.
+
+
+
+What I’m Currently Doing
