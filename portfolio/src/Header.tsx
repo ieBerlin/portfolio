@@ -24,7 +24,7 @@ export default function Header() {
       <div className="container relative mt-3 ml-3">
         <img
           src={IconImage}
-          className={`h-20 logo-image ${isToped ? "moved" : undefined}`}
+          className={`h-20 cursor-pointer logo-image ${isToped ? "moved" : undefined}`}
           alt=""
         />
       </div>

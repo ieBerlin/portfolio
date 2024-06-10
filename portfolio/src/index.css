@@ -22,3 +22,11 @@
     opacity: 0;
     top: -100px;
 }
+
+.alaa-image {
+    filter: drop-shadow(5px 5px 0 #dc2626);
+}
+
+.alaa-image:hover {
+    filter: drop-shadow(9px 9px 0 #dc2626);
+}

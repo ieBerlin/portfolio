@@ -8,6 +8,10 @@ import PhoneNumberSvg from "./assets/social-network/PhoneNumberSvg";
 export default function Footer() {
   return (
     <section>
+        <hr
+        className="w-4/5 mx-auto mt-3"
+        style={{ borderTop: "0.1px solid #7dcfff" }}
+      />
       <div className="flex items-start gap-10 justify-center py-2 text-center sm:py-3 md:py-4 lg:py-5">
         <div className=" flex flex-col gap-4 justify-center items-start text-sm sm:text-md md:text-lg">
           <h3 className="font-semibold text-gray-500 uppercase w-full">Social :</h3>

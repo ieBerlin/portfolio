@@ -1,5 +1,5 @@
 import logoImage from "./assets/1718025457471.jpg";
-import ElementTitle from "./ElementTitle.tsx"
+import ElementTitle from "./ElementTitle.tsx";
 export default function Introduction() {
   return (
     <div className=" w-4/5 mx-auto">
@@ -33,9 +33,10 @@ export default function Introduction() {
             connect!
           </h3>
           <img
-            className="w-28 h-28 rounded-md drop-shadow-lg md:w-60 md:h-60"
+            className="cursor-pointer w-28 h-28 rounded-md drop-shadow-lg md:w-60 md:h-60 transition-transform duration-300 alaa-image"
             src={logoImage}
             alt="Profile"
+            
           />
         </div>
       </main>
