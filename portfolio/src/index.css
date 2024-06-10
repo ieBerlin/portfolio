@@ -9,13 +9,13 @@
     position: fixed;
     left: 3px;
     top: 3px;
-    transition: filter 0.3s ease, opacity 0.3s ease, top 0.5s ease;
-    filter: drop-shadow( 2px 2px 0 aqua);
+    transition: filter 0.2s ease, opacity 0.3s ease, top 0.5s ease;
+    filter: drop-shadow(2px 2px 0 aqua);
 }
 
 .logo-image:hover {
-    transition: all 0.3s ease;
-    filter: drop-shadow( 4px 4px 0 aqua);
+    transition: all 0.5s ease;
+    filter: drop-shadow(4px 4px 0 aqua);
 }
 
 .logo-image.moved {
@@ -25,8 +25,25 @@
 
 .alaa-image {
     filter: drop-shadow(5px 5px 0 #dc2626);
+    transition: all ease 0.3s;
 }
 
 .alaa-image:hover {
-    filter: drop-shadow(9px 9px 0 #dc2626);
+    transition: all ease 0.3s;
+    filter: drop-shadow(11px 11px 0 #dc2626);
+}
+
+.arrow-container {
+    position: relative;
+}
+
+.left-arrow {
+    position: absolute;
+    background-color: transparent;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 8px solid aqua;
 }

@@ -2,8 +2,7 @@ import { useEffect, useState } from "react";
 import IconImage from "./assets/icon.png";
 
 export default function Header() {
-  const [scrollPosition, setScrollPosition] = useState(0);
-
+  const [scrollPosition, setScrollPosition] = useState(document.documentElement.scrollTop);
   const handleScroll = () => {
     const position =
       window.pageYOffset || document.documentElement.scrollTop;

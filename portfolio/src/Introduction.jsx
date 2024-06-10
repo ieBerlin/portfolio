@@ -7,10 +7,10 @@ export default function Introduction() {
         Who's <span className="text-aqua">Alaa Eddine Ourmassi</span>
       </ElementTitle>
       <main>
-        <div className="my-4 flex flex-row gap-6 md:gap-10 items-start justify-center md:justify-start mx-auto">
+        <div className="my-4 flex flex-row gap-6 md:gap-10 items-start justify-between mx-auto">
           <h3 className="font-medium text-gray-200 text-sm md:text-md lg:text-lg">
-            Hey there!
-            <br /> I'm{" "}
+          <span className="text-center w-full block text-red-200 text-md md:text-lg lg:text-xl"> Hey there!</span>
+            I'm{" "}
             <span
               style={{
                 color: "aqua",
