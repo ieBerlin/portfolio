@@ -10,7 +10,7 @@ export default function Introduction() {
       <main className="my-4 flex flex-row gap-10 items-start mx-auto">
         <div>
           <h3 className="font-medium text-gray-200 text-sm md:text-md lg:text-lg">
-            <span className="roboto-mono-font text-start w-full block text-gray-400 text-md md:text-lg lg:text-xl rubik-font">
+            <span className="roboto-mono-font text-start w-full block text-gray-200 text-md md:text-lg lg:text-xl rubik-font">
               {" "}
               Hey there!
             </span>
