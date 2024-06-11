@@ -1,6 +1,18 @@
+import React from "react";
 import projectsData from "./data";
 import ElementTitle from "./ElementTitle";
-export default function Projects() {
+
+interface Project {
+  id: string;
+  title: string;
+  description: string;
+  techs: string[];
+  image: string;
+}
+
+interface ProjectsProps {}
+
+const Projects: React.FC<ProjectsProps> = () => {
   return (
     <section className="w-4/5 mx-auto">
       <ElementTitle>
@@ -18,8 +30,17 @@ export default function Projects() {
       </div>
     </section>
   );
+};
+
+interface ProjectComponentProps {
+  data: Project;
+  reversed: boolean;
 }
-function ProjectComponent({ data, reversed }) {
+
+const ProjectComponent: React.FC<ProjectComponentProps> = ({
+  data,
+  reversed,
+}) => {
   return (
     <div className="border border-gray-200 p-3 md:grid md:grid-cols-2 justify-center gap-3 rounded-md hover:border-sky-600 transition-all">
       {reversed ? (
@@ -43,8 +64,14 @@ function ProjectComponent({ data, reversed }) {
       )}
     </div>
   );
+};
+
+interface ImageProps {
+  image: string;
+  title: string;
 }
-function Image({ image, title }) {
+
+const Image: React.FC<ImageProps> = ({ image, title }) => {
   return (
     <div className="flex flex-col justify-center items-center gap-2">
       <img
@@ -57,8 +84,19 @@ function Image({ image, title }) {
       </h2>
     </div>
   );
+};
+
+interface DescriptionProps {
+  title: string;
+  description: string;
+  techs: string[];
 }
-function Description({ title, description, techs }) {
+
+const Description: React.FC<DescriptionProps> = ({
+  title,
+  description,
+  techs,
+}) => {
   return (
     <div>
       <h2 className="text-white font-semibold rubik-font hover:text-sky-600 transition-all text-sm sm:text-md lg:text-lg">
@@ -70,7 +108,7 @@ function Description({ title, description, techs }) {
           {techs.map((item) => (
             <li
               key={item}
-              className="  text-sm sm:text-md lg:text-lg transition-all cursor-pointer rubik-font bg-gray-800 hover:bg-gray-600 inline-block rounded-md m-1 p-1 capitalize text-white"
+              className="text-sm sm:text-md lg:text-lg transition-all cursor-pointer rubik-font bg-gray-800 hover:bg-gray-600 inline-block rounded-md m-1 p-1 capitalize text-white"
             >
               {item}
             </li>
@@ -79,4 +117,6 @@ function Description({ title, description, techs }) {
       )}
     </div>
   );
-}
+};
+
+export default Projects;
