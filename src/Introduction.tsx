@@ -7,7 +7,8 @@ export default function Introduction() {
         Who's{" "}
         <span className="bold-roboto-mono-font">Alaa Eddine Ourmassi</span>
       </ElementTitle>
-      <main className="my-4 flex flex-row gap-10 items-start mx-auto">
+      {/* <main className="my-4 flex flex-row gap-10 items-start mx-auto"> */}
+      <main className="my-4 mx-auto flex flex-start gap-10 items-start sm:items-center text-center sm:text-start">
         <div>
           <h3 className="font-medium text-gray-200 text-sm md:text-md lg:text-lg">
             <span className="roboto-mono-font text-start w-full block text-gray-200 text-md md:text-lg lg:text-xl rubik-font">
@@ -39,7 +40,7 @@ export default function Introduction() {
           </h3>
         </div>
         <img
-          className="cursor-pointer w-28 h-28 rounded-md md:w-60 md:h-60 transition-transform duration-300 alaa-image"
+          className=" float-right cursor-pointer w-28 h-28 rounded-md md:w-60 md:h-60 transition-transform duration-300 alaa-image"
           src={logoImage}
           alt="Profile"
         />

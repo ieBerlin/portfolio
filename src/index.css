@@ -5,6 +5,10 @@
     display: inline-block;
 }
 
+html {
+    background-color: #080e1c;
+}
+
 .logo-image {
     position: fixed;
     left: 3px;

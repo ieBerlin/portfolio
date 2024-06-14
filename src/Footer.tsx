@@ -21,7 +21,7 @@ const SocialComponent: React.FC<SocialComponentProps> = ({
     <a href={href} target="_blank" rel="noopener noreferrer">
       <div className="flex flex-row gap-2 items-center justify-start">
         {children}
-        <h3 className="tracking-wider text-white roboto-mono-font text-sm sm:text-base">{label}</h3>
+        <h3 className="tracking-wider text-white roboto-mono-font text-sm">{label}</h3>
       </div>
     </a>
   );
@@ -51,11 +51,11 @@ const Footer: React.FC = () => {
           </SocialComponent>
           <div className="flex flex-row gap-2 items-center">
             <PhoneNumberSvg />
-            <h3 className="tracking-wider text-white roboto-mono-font text-sm sm:text-base">+213-658094987</h3>
+            <h3 className="tracking-wider text-white roboto-mono-font text-sm">+213-658094987</h3>
           </div>
           <div className="flex flex-row gap-2 items-center">
             <LocationSvg />
-            <h3 className="tracking-wider text-white roboto-mono-font text-sm sm:text-base">Sidi Bel Abbes, Algeria</h3>
+            <h3 className="tracking-wider text-white roboto-mono-font text-sm">Sidi Bel Abbes, Algeria</h3>
           </div>
         </div>
       </div>

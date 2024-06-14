@@ -20,7 +20,7 @@ export default function Header() {
 
   return (
     <section>
-      <div className="container relative mt-3 ml-3">
+      <div className="container relative ml-3">
         <img
           src={IconImage}
           className={`h-28 cursor-pointer logo-image ${isToped ? "moved" : undefined}`}

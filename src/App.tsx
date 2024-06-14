@@ -7,13 +7,13 @@ import SkillsSection from './SkillsSection.tsx';
 import CurrentActivities from './CurrentActivities.tsx';
 export default function App() {
   return (
-    <div className="bg-[#080e1c]">
+    <>
       <Header />
       <Introduction />
       <Projects />
       <SkillsSection />
       <CurrentActivities />
       <Footer />
-    </div>
+    </>
   );
 }
